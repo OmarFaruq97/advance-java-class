@@ -13,11 +13,11 @@ public class Main {
         // Call the method to insert dummy data
 //        insertStudentData.insertDummyData(students);
 
-        InsertStudentData postgreSql = new InsertStudentData();
-        postgreSql.insertDummyData(students);
-
-        InsertStudentData insertStudentData1 = new InsertStudentData();
-        insertStudentData1.insertDummyData(students);
+//        InsertStudentData postgreSql = new InsertStudentData();
+//        postgreSql.insertDummyData(students);
+//
+//        InsertStudentData insertStudentData1 = new InsertStudentData();
+//        insertStudentData1.insertDummyData(students);
 
     }
 }
