@@ -6,10 +6,8 @@ public class Main {
 
         // Define Dummy Data
         String[][] BookData = {
-                {"Mezor Dalim Bolchi", "Mezor Dalim", "AttoZiboni", "500.30","1975-08-15"},
-//                {"", "", ""},
-//                {"Alice Johnson", "19", "alice.johnson@example.com"},
-//                {"Bob Brown", "21", "bob.brown@example.com"}
+                {"Mezor Dalim Bolchi", "Mezor Dalim", "AttoZiboni", "500.30", "1975-08-15"},
+//
         };
 
         // Call the method to insert dummy data
