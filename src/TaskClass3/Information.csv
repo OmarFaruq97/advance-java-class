@@ -1,6 +1,12 @@
-id,name,buyer,seller,price,buyDate,sellDate
-1,apple, Messi, Ronaldo,100,2020-01-01,2020-01-02
-2,orange, Neymar, Dybala,200,2020-01-02,2020-01-03
-3,banana, Modric, Salah,300,2020-01-03,2020-01-04
+id, name, buyer, seller, price, buyDate, sellDate
+1, apple, A, B, 100, 2020-01-01,2020-01-02
+2, orange, A, B, 200, 2020-01-02,2020-01-03
+3, banana, A, B, 300, 2020-01-03,2020-01-04
+
+1) Read this data from a file
+2) Insert them to database
+3) Read the data from database
+4) Change the name to something else
+5) Save to a new file
 
 C:\GIT\advance-java-class\src\TaskClass3\Information.csv
