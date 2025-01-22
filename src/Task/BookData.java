@@ -5,14 +5,13 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-
 public class BookData {
-    private static final String URL = "jdbc:postgresql://localhost:5432/MyDB"; // Replace with your DB URL
+    private static final String URL = "jdbc:postgresql://localhost:5432/DemoDB"; // Replace with your DB URL
     private static final String USER = "postgres"; // Replace with your DB username
-    private static final String PASSWORD = "1245"; // Replace with your DB password
+    private static final String PASSWORD = "1234"; // Replace with your DB password
 
     public void insertDummyData(String[][] BookData) {
-        String insertQuery = "INSERT INTO BookData (Name, Author, Type, Price, Date) VALUES (?, ?, ?, ?, ?)";
+        String insertQuery = "INSERT INTO BookData (Name, Author, BookType, Price, Date) VALUES (?, ?, ?, ?, ?)";
 
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
@@ -23,7 +22,6 @@ public class BookData {
                 preparedStatement.setString(3, bookData[2]); // Type
                 preparedStatement.setDouble(4, Double.parseDouble(bookData[3])); // Price Parse the string to a double
                 preparedStatement.setDate(5, java.sql.Date.valueOf(bookData[4])); // Parse the date string
-
 
 
                 preparedStatement.addBatch(); // Add to batch for batch execution
