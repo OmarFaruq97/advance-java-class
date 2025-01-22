@@ -4,9 +4,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class InsertStudentData {
-    private static final String URL = "jdbc:postgresql://localhost:5432/MyDB"; // Replace with your DB URL
-    private static final String USER = "postgres"; // Replace with your DB username
-    private static final String PASSWORD = "1245"; // Replace with your DB password
+    private static final String URL = "jdbc:postgresql://localhost:5432/MyDB";
+    private static final String USER = "postgres";
+    private static final String PASSWORD = "1245";
 
     public void insertDummyData(String[][] students) {
         String insertQuery = "INSERT INTO STUDENTJDBC (name, age, email) VALUES (?, ?, ?)";
@@ -29,6 +29,5 @@ public class InsertStudentData {
             System.err.println("Error inserting data: " + e.getMessage());
         }
     }
-
 }
 
