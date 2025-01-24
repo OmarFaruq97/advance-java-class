@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class LibrarySystem {
 
-    static final String URL ="jdbc:postgresql://localhost:5432/MyDB";
-    static final String USER ="postgres";
-    static final String PASSWORD = "1245";
+    static final String URL = "jdbc:postgresql://localhost:5432/DemoDB";
+    static final String USER = "postgres";
+    static final String PASSWORD = "1234";
 
     public void insertDummyData(String[][] Books) {
         String insertQuery = "INSERT INTO Books (title, author, year, page, price, isBorrowed) VALUES (?, ?, ?, ?, ?, ?)";
@@ -17,20 +17,21 @@ public class LibrarySystem {
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
 
-//            for (String[] student : Books) {
-//                preparedStatement.setString(1, student[0]); // Name
-//                preparedStatement.setInt(2, Integer.parseInt(student[1])); // Age
-//                preparedStatement.setString(3, student[2]); // Email
+//            for (String[] books : Books) {
+//                preparedStatement.setString(1, books[0]); // title
+//                preparedStatement.setString(2, books[1]); // author
+//                preparedStatement.setInt(3, Integer.parseInt(books[2])); // year
+//                preparedStatement.setInt(4, Integer.parseInt(books[3])); //pagesNumber
+//                preparedStatement.setInt(5, Integer.parseInt(books[4])); //price
+//                preparedStatement.setBoolean(6, Boolean.parseBoolean(books[5])); //isAvailable
 //
 //                preparedStatement.addBatch();
 //            }
 
             int[] rowsInserted = preparedStatement.executeBatch();
-            System.out.println("Rows inserted: " + rowsInserted.length);
 
         } catch (SQLException e) {
-            System.err.println("Error inserting data: " + e.getMessage());
+           System.err.println("Error inserting data: " + e.getMessage());
         }
     }
 }
-

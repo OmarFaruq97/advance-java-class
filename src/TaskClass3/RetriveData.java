@@ -7,8 +7,6 @@ public class RetriveData extends PSQL{
 
     private ArrayList<String[]> arrayString = new ArrayList<>();
 
-
-
     public void selectAllProduct(){
 
         String selectQuery = "SELECT * FROM Product";
