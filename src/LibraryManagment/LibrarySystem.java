@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class LibrarySystem {
 
-    static final String URL = "jdbc:postgresql://localhost:5432/DemoDB";
+    static final String URL = "jdbc:postgresql://localhost:5432/MyDB";
     static final String USER = "postgres";
-    static final String PASSWORD = "1234";
+    static final String PASSWORD = "1245";
 
     public void insertDummyData(String[][] Books) {
         String insertQuery = "INSERT INTO Books (title, author, year, page, price, isBorrowed) VALUES (?, ?, ?, ?, ?, ?)";
@@ -31,7 +31,7 @@ public class LibrarySystem {
             int[] rowsInserted = preparedStatement.executeBatch();
 
         } catch (SQLException e) {
-           System.err.println("Error inserting data: " + e.getMessage());
+            System.err.println("Error inserting data: " + e.getMessage());
         }
     }
 }
