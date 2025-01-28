@@ -3,7 +3,7 @@ public class Main {
         InsertStudentData insertStudentData = new InsertStudentData();
 
         // Define Dummy Data
-        String[][] students = {
+        String[][] STUDENTJDBC = {
                 {"John Doe", "20", "john.doe@example.com"},
                 {"Jane Smith", "22", "jane.smith@example.com"},
                 {"Alice Johnson", "19", "alice.johnson@example.com"},
