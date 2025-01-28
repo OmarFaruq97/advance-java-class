@@ -6,7 +6,9 @@ public class Main {
 
         // Define Dummy Data
         String[][] BookData = {
-                {"Mezor Dalim Bolchi", "Mezor Dalim", "AttoZiboni", "500.30", "1975-08-15"},
+
+//                If I execute this program, it will insert data into the table
+//                {"Mezor Dalim Bolchi", "Mezor Dalim", "AttoZiboni", "500.30", "1975-08-15"},
 //
         };
 
