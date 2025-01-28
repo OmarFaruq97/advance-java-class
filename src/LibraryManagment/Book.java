@@ -9,7 +9,8 @@ public class Book {
     double price;
     boolean isBorrowed;
 
-    public Book(String title, String author, int year, int pageNumber, double price, boolean isBorrewed ) {
+    public Book
+            (String title, String author, int year, int pageNumber, double price, boolean isBorrewed ) {
         this.title = title;
         this.author = author;
         this.year = year;

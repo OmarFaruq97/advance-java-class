@@ -20,19 +20,39 @@ public class Main {
         librarySystems.add(bookTwo);
         librarySystems.add(bookThree);
 
-        for (LibrarySystem lOOp : librarySystems){
-            lOOp.displayInformation();
-        }
+//        for (LibrarySystem lOOp : librarySystems){
+//            lOOp.displayInformation();
+//        }
 
         while (true){
             System.out.println("\n WellCome to Library Menu====");
             System.out.println("1)**List of all Books**");
             System.out.println("2)Borrow any Book");
             System.out.println("3)Return Book");
-            System.out.println("4)Terminate the Program");
+            System.out.println("4)Exit");
 
             System.out.println("Choose a option: ");
             int main = scanner.nextInt();
+            scanner.nextLine();
+            switch (main){
+                case 1:
+                    listBook(librarySystems);
+                    break;
+                case 2:
+//                    BorrowBookMethod(scanner);
+
+            }
         }
     }
+    public static void listBook(List<LibrarySystem> librarySystems){
+        for (LibrarySystem lOOp : librarySystems){
+            lOOp.displayInformation();
+        }
+
+    }
+
+
+
+
+
 }
