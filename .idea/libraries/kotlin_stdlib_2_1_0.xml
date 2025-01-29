@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="kotlin-stdlib-2.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-stdlib-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okhttp-5.0.0-alpha.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okio-jvm-3.10.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
