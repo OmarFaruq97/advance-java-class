@@ -14,11 +14,12 @@ public class Main {
 
         CRUDOperation crudOperation = new CRUDOperation();
 
-                                    // here inserting Data
-        crudOperation.insertProduct(insert1);
-        crudOperation.insertProduct(insert2);
-        crudOperation.insertProduct(insert3);
+                        // here inserted Mode
+//        crudOperation.insertProduct(insert1);
+//        crudOperation.insertProduct(insert2);
+//        crudOperation.insertProduct(insert3);
 //
+
         crudOperation.fetchProduct(fetchData);
 //        crudOperation.updateProduct(update);
 //        crudOperation.deleteProduct(delete);
