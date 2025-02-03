@@ -1,7 +1,7 @@
 package Self.ExceptionHandaling;
 import java.util.Scanner;
 
-public class PracticeOne {
+public class Practice1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome To Exception Handling");
