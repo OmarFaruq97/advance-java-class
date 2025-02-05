@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class CRUDOperation {
 
 
-    //insert product..
+    //insert product
     public void insertProduct(String s){
 
         try (Connection connection = DatabaseConnection.getPostgresConnection();

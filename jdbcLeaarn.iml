@@ -9,5 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="postgresql-42.7.5" level="project" />
     <orderEntry type="library" name="kotlin-stdlib-2.1.0" level="project" />
+    <orderEntry type="library" name="advance-java-class" level="project" />
+    <orderEntry type="library" name="advance-java-class1" level="project" />
   </component>
 </module>

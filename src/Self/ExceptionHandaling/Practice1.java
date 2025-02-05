@@ -1,4 +1,5 @@
 package Self.ExceptionHandaling;
+
 import java.util.Scanner;
 
 public class Practice1 {
@@ -16,7 +17,7 @@ public class Practice1 {
             int result = dividend / divisor;
             System.out.println("Your result is: " + result);
         } catch (ArithmeticException e) {
-            System.out.println("Divisor can't be '0' ");
+            System.out.println("Divisor can't be '0' and: " + e.getMessage());
         }
         scanner.close();
     }
